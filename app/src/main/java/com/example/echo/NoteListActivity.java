@@ -1,14 +1,16 @@
 package com.example.echo;
 
+import android.support.v4.app.Fragment;
+
 /**
  * Author:Ruibo Liu(ruibo.liu.gr@dartmoputh.edu)
- * <p>
+ *
  * Licensed under the Apache License,Version2.0(the"License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * <p>
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * <p>
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -16,21 +18,7 @@ package com.example.echo;
  * limitations under the License.
  */
 
-import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-
 public class NoteListActivity extends SingleFragmentActivity {
-
 
     @Override
     protected Fragment createFragment() {
