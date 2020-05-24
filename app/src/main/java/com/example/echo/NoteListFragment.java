@@ -2,18 +2,14 @@ package com.example.echo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-
-import android.support.v4.app.FragmentActivity;
 
 import java.util.List;
 
@@ -86,8 +82,7 @@ public class NoteListFragment extends Fragment {
                     mNote.getTitle() + " clicked!", Toast.LENGTH_SHORT)
                     .show();
 
-            Intent intent = new Intent(getActivity(), CreateNoteActivity.class);
-//            intent.putExtra("notes", text_of_note);
+            Intent intent = CreateNoteActivity.newIntent(getActivity(), mNote.getId());
             startActivity(intent);
         }
     }
@@ -108,8 +103,8 @@ public class NoteListFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(NoteHolder holder, int position) {
-            Note crime = mNotes.get(position);
-            holder.bind(crime);
+            Note note = mNotes.get(position);
+            holder.bind(note);
         }
 
         @Override

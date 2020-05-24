@@ -1,6 +1,7 @@
 package com.example.echo;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -9,12 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-
-import android.support.v4.app.FragmentActivity;
+import java.util.UUID;
 
 /**
  * Author:Ruibo Liu(ruibo.liu.gr@dartmoputh.edu)
@@ -32,16 +28,36 @@ import android.support.v4.app.FragmentActivity;
  * limitations under the License.
  */
 public class CreateNoteFragment extends Fragment {
+
+    private static final String ARG_NOTE_ID = "note_id";
+
     private Note mNote;
     private EditText mTitleField;
     private EditText mNoteTextField;
     private Button mDateButton;
     private Button mImageUpload;
 
+    /**
+     * helper function to create instance of CreateNoteFragment given note_id
+     *
+     * @param noteID
+     * @return
+     */
+    public static CreateNoteFragment newInstance(UUID noteID) {
+        Bundle args = new Bundle();
+        args.putSerializable(ARG_NOTE_ID, noteID);
+
+        CreateNoteFragment fragment = new CreateNoteFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mNote = new Note();
+        // extract the corresponding note
+        UUID noteID = (UUID) getArguments().getSerializable(ARG_NOTE_ID);
+        mNote = NoteFactory.get(getActivity()).getNote(noteID);
     }
 
     @Override
@@ -49,6 +65,7 @@ public class CreateNoteFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_note, container, false);
 
         mTitleField = view.findViewById(R.id.note_title);
+        mTitleField.setText(mNote.getTitle()); // set text when given the note
         mTitleField.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
