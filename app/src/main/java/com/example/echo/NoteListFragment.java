@@ -1,5 +1,6 @@
 package com.example.echo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -84,6 +85,10 @@ public class NoteListFragment extends Fragment {
             Toast.makeText(getActivity(),
                     mNote.getTitle() + " clicked!", Toast.LENGTH_SHORT)
                     .show();
+
+            Intent intent = new Intent(getActivity(), CreateNoteActivity.class);
+//            intent.putExtra("notes", text_of_note);
+            startActivity(intent);
         }
     }
 

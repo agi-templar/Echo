@@ -36,6 +36,7 @@ public class CreateNoteFragment extends Fragment {
     private EditText mTitleField;
     private EditText mNoteTextField;
     private Button mDateButton;
+    private Button mImageUpload;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

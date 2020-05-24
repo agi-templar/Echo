@@ -4,9 +4,9 @@
     <!-- Strings used for fragments for navigation -->
 
     <string name="note_title_label">Note Title</string>
-    <string name="note_title_hint">Note Hint</string>
-    <string name="note_details_label">Note Detail</string>
-    <string name="note_text">Note Text!</string>
+    <string name="note_title_hint">input title here</string>
+    <string name="note_details_label">note text</string>
+    <string name="note_text">say something to the world</string>
     <string name="add_note">Add</string>
     <string name="reset_note">Reset</string>
     <string name="icon">Note Icon</string>

@@ -16,9 +16,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:padding="2dip"
-            android:src="@mipmap/ic_echo"
-            android:contentDescription="@string/icon" />
+            android:contentDescription="@string/icon"
+            android:padding="8dip"
+            android:src="@mipmap/ic_echo" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,8 +29,8 @@
                 android:id="@+id/note_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
                 android:text="Note Title"
+                android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView

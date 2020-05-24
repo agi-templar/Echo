@@ -14,8 +14,7 @@
     <EditText
         android:id="@+id/note_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/note_title_hint" />
+        android:layout_height="wrap_content" />
 
     <TextView
         style="?android:listSeparatorTextViewStyle"
@@ -23,15 +22,20 @@
         android:layout_height="wrap_content"
         android:text="@string/note_details_label" />
 
+    <EditText
+        android:id="@+id/note_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/note_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/note_text"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/upload_image"
+        android:layout_width="48dp"
         android:layout_height="wrap_content"
-        android:text="@string/note_text" />
+        android:background="@mipmap/image_upload" />
 
 </LinearLayout>
