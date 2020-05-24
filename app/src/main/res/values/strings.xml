@@ -6,5 +6,8 @@
     <string name="note_title_label">Note Title</string>
     <string name="note_title_hint">Note Hint</string>
     <string name="note_details_label">Note Detail</string>
-    <string name="note_text">Note Text</string>
+    <string name="note_text">Note Text!</string>
+    <string name="add_note">Add</string>
+    <string name="reset_note">Reset</string>
+    <string name="icon">Note Icon</string>
 </resources>
