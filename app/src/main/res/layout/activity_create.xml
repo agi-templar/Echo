@@ -55,5 +55,12 @@
                 android:layout_margin="40dp"/>
         </LinearLayout>
 
+        <Button
+            android:id="@+id/echo_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onEchoClicked"
+            android:text="echo"
+            android:layout_margin="16dp"/>
     </LinearLayout>
 </ScrollView>
