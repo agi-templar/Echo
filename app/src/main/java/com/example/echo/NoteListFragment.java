@@ -50,8 +50,12 @@ public class NoteListFragment extends Fragment {
         NoteFactory noteFac = NoteFactory.get(getActivity());
         List<Note> notes = noteFac.getNotes();
 
-        mAdapter = new NoteAdapter(notes);
-        mNoteRecyclerView.setAdapter(mAdapter);
+        if (mAdapter == null) {
+            mAdapter = new NoteAdapter(notes);
+            mNoteRecyclerView.setAdapter(mAdapter);
+        } else {
+            mAdapter.notifyDataSetChanged();
+        }
     }
 
     private class NoteHolder extends RecyclerView.ViewHolder
