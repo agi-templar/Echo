@@ -2,13 +2,9 @@ package com.example.echo;
 
 
 import android.os.Bundle;
-
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 
 /**
  * Author:Ruibo Liu(ruibo.liu.gr@dartmoputh.edu)
