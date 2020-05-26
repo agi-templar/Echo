@@ -74,6 +74,8 @@ public class CreateNoteFragment extends Fragment {
 
         mTitleField = view.findViewById(R.id.note_title);
         mTitleField.setText(mNote.getTitle()); // set text when given the note
+//        Typeface titleFont = Typeface.createFromAsset(getContext().getAssets(), "font/title.ttf");
+//        mTitleField.setTypeface(titleFont);
         mTitleField.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

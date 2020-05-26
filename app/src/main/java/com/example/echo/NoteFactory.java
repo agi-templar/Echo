@@ -40,12 +40,12 @@ public class NoteFactory {
 
     private NoteFactory(Context context) {
         mNotes = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
-            Note note = new Note();
-            note.setTitle("Note #" + i);
-            note.setNoteText("Notes text here!");
-            mNotes.add(note);
-        }
+//        for (int i = 0; i < 100; i++) {
+//            Note note = new Note();
+//            note.setTitle("Note #" + i);
+//            note.setNoteText("Notes text here!");
+//            mNotes.add(note);
+//        }
     }
 
     public List<Note> getNotes() {
@@ -60,6 +60,10 @@ public class NoteFactory {
         }
 
         return null;
+    }
+
+    public void addNote(Note note) {
+        mNotes.add(note);
     }
 }
 
