@@ -93,6 +93,27 @@ public class CreateNoteFragment extends Fragment {
             }
         });
 
+        mNoteTextField = view.findViewById(R.id.note_text);
+        mNoteTextField.setText(mNote.getTitle()); // set text when given the note
+//        Typeface titleFont = Typeface.createFromAsset(getContext().getAssets(), "font/title.ttf");
+//        mTitleField.setTypeface(titleFont);
+        mNoteTextField.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                mNote.setNoteText(s.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
         mDateButton = view.findViewById(R.id.note_date);
         updateDate();
         mDateButton.setOnClickListener(new View.OnClickListener() {
