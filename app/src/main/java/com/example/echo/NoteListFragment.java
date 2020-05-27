@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
+import java.util.Random;
 
 /**
  * Author:Ruibo Liu(ruibo.liu.gr@dartmoputh.edu)
@@ -36,6 +37,7 @@ import java.util.List;
 public class NoteListFragment extends Fragment {
     private RecyclerView mNoteRecyclerView;
     private NoteAdapter mAdapter;
+    private Random mRandom = new Random();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -72,6 +74,14 @@ public class NoteListFragment extends Fragment {
                 NoteFactory.get(getActivity()).addNote(note);
                 Intent intent = CreateNoteActivity.newIntent(getActivity(), note.getId());
                 startActivity(intent);
+                return true;
+            case R.id.echo:
+                int emotion = mRandom.nextInt(5);
+                // Toast.makeText(getActivity(), Integer.toString(emotion), Toast.LENGTH_SHORT).show();
+                Response response = new Response(emotion);
+                ResponseFactory.get(getActivity()).addResponse(response);
+                Intent responseIntent = new Intent(getActivity(), ResponseListActivity.class);
+                startActivity(responseIntent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
