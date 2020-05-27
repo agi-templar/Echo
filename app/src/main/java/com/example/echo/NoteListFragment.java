@@ -77,7 +77,7 @@ public class NoteListFragment extends Fragment {
                 return true;
             case R.id.echo:
                 int emotion = mRandom.nextInt(5);
-                Toast.makeText(getActivity(), Integer.toString(emotion), Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getActivity(), Integer.toString(emotion), Toast.LENGTH_SHORT).show();
                 Response response = new Response(emotion);
                 ResponseFactory.get(getActivity()).addResponse(response);
                 Intent responseIntent = new Intent(getActivity(), ResponseListActivity.class);

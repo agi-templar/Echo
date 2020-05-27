@@ -13,6 +13,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,21 +49,6 @@ public class ResponseListFragment extends Fragment {
         setHasOptionsMenu(true);  // aware of option menu callback
     }
 
-    // callback function for the option menu
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.add_note:
-//                Note note = new Note();
-//                NoteFactory.get(getActivity()).addNote(note);
-//                Intent intent = CreateNoteActivity.newIntent(getActivity(), note.getId());
-//                startActivity(intent);
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
-//    }
-
     @Override
     public void onResume() {
         super.onResume();
@@ -86,23 +72,29 @@ public class ResponseListFragment extends Fragment {
 
         private Response mResponse;
 
+        private ImageView mImageView;
         private TextView mTitleTextView;
+        private TextView mURL;
         private TextView mDateTextView;
 
         public ResponseHolder(LayoutInflater inflater, ViewGroup parent) {
-            super(inflater.inflate(R.layout.list_item_note, parent, false));
+            super(inflater.inflate(R.layout.list_item_response, parent, false));
             itemView.setOnClickListener(this);
 
-            mTitleTextView = itemView.findViewById(R.id.note_title);
-            mDateTextView = itemView.findViewById(R.id.note_date);
+            mImageView = itemView.findViewById(R.id.response_image);
+            mTitleTextView = itemView.findViewById(R.id.response_title);
+            mURL = itemView.findViewById(R.id.response_url);
+            mDateTextView = itemView.findViewById(R.id.response_date);
         }
 
         public void bind(Response response) {
             mResponse = response;
+
+            mImageView.setImageResource(mResponse.getImage());
             mTitleTextView.setText(mResponse.getTitle());
+            mURL.setText(mResponse.getURL());
             mDateTextView.setText(mResponse.getDate().toString());
         }
-
         @Override
         public void onClick(View view) {
             Toast.makeText(getActivity(),

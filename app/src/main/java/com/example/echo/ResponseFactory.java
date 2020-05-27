@@ -23,12 +23,6 @@ public class ResponseFactory {
 
     private ResponseFactory(Context context) {
         mResponses = new ArrayList<>();
-//        for (int i = 0; i < 100; i++) {
-//            Note note = new Note();
-//            note.setTitle("Note #" + i);
-//            note.setNoteText("Notes text here!");
-//            mNotes.add(note);
-//        }
     }
 
     public List<Response> getResponses() {
