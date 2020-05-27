@@ -4,6 +4,8 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.android.support:cardview-v7:27.1.1'
     implementation "com.android.support:support-fragment:27.1.1"
+    implementation 'com.ibm.watson:ibm-watson:8.4.0'
+    implementation 'com.ibm.watson:visual-recognition:8.4.0'
 }
 
 android {

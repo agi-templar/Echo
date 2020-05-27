@@ -11,4 +11,5 @@
     <string name="reset_note">Reset</string>
     <string name="icon">Note Icon</string>
     <string name="date_picker_title">Date of Note</string>
+    <string name="profile_image_file_name">profile_image</string>
 </resources>
