@@ -55,6 +55,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Objects;
 import java.util.UUID;
 
 import okhttp3.Authenticator;
@@ -350,24 +351,24 @@ public class CreateNoteFragment extends Fragment {
         }
 
         protected void onPostExecute(double[] result) {
-            for(int i = 0; i < result.length; i++){
+            for (int i = 0; i < result.length; i++) {
                 System.out.println(i + " " + result[i]);
             }
             int maxIndex = 0;
             double maxScore = 0;
-            for(int i = 0; i < 5; i++){
-                if(result[i] > maxScore){
+            for (int i = 0; i < 5; i++) {
+                if (result[i] > maxScore) {
                     maxScore = result[i];
                     maxIndex = i;
                 }
             }
 
-            //put the index of the result(emotion) into bundle
             Intent intent = new Intent(getActivity(), ResponseListActivity.class);
-            intent.putExtra("emotion", maxIndex);
+            Response response = new Response(maxIndex);
+            ResponseFactory.get(getActivity()).addResponse(response);
             startActivity(intent);
+            getActivity().finish();
         }
-
     }
 
     private void saveProfileImage() {
