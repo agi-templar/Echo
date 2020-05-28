@@ -4,50 +4,192 @@ public class Database {
     // Happy
     public static int[] db_image_happy = {
             R.drawable.happy_1,
-            R.drawable.happy_2
+            R.drawable.happy_2,
+            R.drawable.happy_3,
+            R.drawable.happy_4,
+            R.drawable.happy_5,
+            R.drawable.happy_6,
+            R.drawable.teen_1,
+            R.drawable.teen_2,
+            R.drawable.teen_3,
+            R.drawable.food_1,
+            R.drawable.food_2,
+            R.drawable.food_3,
     };
     public static String[] db_url_happy = {
-            "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC?si=WAHloiatS7-FntlOdrqcqQ",
-            "https://open.spotify.com/playlist/1h90L3LP8kAJ7KGjCV2Xfd?si=NR2A4Mt9QieuNcXHKoybEw"
+            "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC",
+            "https://open.spotify.com/playlist/1h90L3LP8kAJ7KGjCV2Xfd",
+            "https://open.spotify.com/playlist/4FYU1aJih7ykRIUYenRt8w",
+            "https://open.spotify.com/playlist/37i9dQZF1DX1H4LbvY4OJi",
+            "https://open.spotify.com/playlist/37i9dQZF1DWZ72qOlbizxi",
+            "https://open.spotify.com/playlist/4AnAUkQNrLKlJCInZGSXRO",
+            "https://movies.disney.com/high-school-musical",
+            "https://www.imdb.com/title/tt5311514/",
+            "https://www.imdb.com/title/tt5164432/",
+            "https://legionathletics.com/healthy-fatty-fish-recipes/",
+            "https://www.allrecipes.com/recipe/236212/homemade-melt-in-your-mouth-dark-chocolate-paleo/",
+            "https://www.thekitchn.com/23-essential-fermented-foods-for-better-gut-health-229599"
     };
 
     // Neutral
     public static int[] db_image_neutral = {
             R.drawable.happy_1,
-            R.drawable.happy_2
+            R.drawable.happy_2,
+            R.drawable.happy_3,
+            R.drawable.happy_4,
+            R.drawable.happy_5,
+            R.drawable.happy_6,
+            R.drawable.funny_1,
+            R.drawable.funny_2,
+            R.drawable.funny_3,
+            R.drawable.funny_4,
+            R.drawable.funny_5,
+            R.drawable.funny_6,
+            R.drawable.funny_7,
+            R.drawable.funny_8,
+            R.drawable.funny_9,
+            R.drawable.food_1,
+            R.drawable.food_2,
+            R.drawable.food_3,
     };
     public static String[] db_url_neutral = {
-            "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC?si=WAHloiatS7-FntlOdrqcqQ",
-            "https://open.spotify.com/playlist/1h90L3LP8kAJ7KGjCV2Xfd?si=NR2A4Mt9QieuNcXHKoybEw"
+            "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC",
+            "https://open.spotify.com/playlist/1h90L3LP8kAJ7KGjCV2Xfd",
+            "https://open.spotify.com/playlist/4FYU1aJih7ykRIUYenRt8w",
+            "https://open.spotify.com/playlist/37i9dQZF1DX1H4LbvY4OJi",
+            "https://open.spotify.com/playlist/37i9dQZF1DWZ72qOlbizxi",
+            "https://open.spotify.com/playlist/4AnAUkQNrLKlJCInZGSXRO",
+            "https://www.amazon.com/Harold-Kumar-Go-White-Castle/dp/B001W880O2/ref=as_li_ss_tl",
+            "https://www.amazon.com/Juno-Ellen-Page/dp/B0014GVCI8/ref=as_li_ss_tl",
+            "https://www.amazon.com/Sideways-Sandra-Oh/dp/B000I9X6NQ/ref=as_li_ss_tl",
+            "https://www.amazon.com/School-Rock-Jack-Black/dp/B0036B7DS2/ref=as_li_ss_tl",
+            "https://www.amazon.com/Lost-Translation-Scarlett-Johansson/dp/B001NLCBJI/ref=as_li_ss_tl",
+            "https://www.amazon.com/Team-America-World-Police-Parker/dp/B00820N2JG/ref=as_li_ss_tl",
+            "https://www.amazon.com/Midnight-Paris-Kathy-Bates/dp/B006O5Y09C/ref=as_li_ss_tl",
+            "https://www.amazon.com/Enough-Said-Julia-Louis-Dreyfus/dp/B00HUNO3JE/ref=as_li_ss_tl",
+            "https://www.amazon.com/Superbad-Jonah-Hill/dp/B00RNV6AP8/ref=as_li_ss_tl",
+            "https://legionathletics.com/healthy-fatty-fish-recipes/",
+            "https://www.allrecipes.com/recipe/236212/homemade-melt-in-your-mouth-dark-chocolate-paleo/",
+            "https://www.thekitchn.com/23-essential-fermented-foods-for-better-gut-health-229599"
     };
 
     // Fear
     public static int[] db_image_fear = {
             R.drawable.happy_1,
-            R.drawable.happy_2
+            R.drawable.happy_2,
+            R.drawable.happy_3,
+            R.drawable.happy_4,
+            R.drawable.happy_5,
+            R.drawable.happy_6,
+            R.drawable.funny_1,
+            R.drawable.funny_2,
+            R.drawable.funny_3,
+            R.drawable.funny_4,
+            R.drawable.funny_5,
+            R.drawable.funny_6,
+            R.drawable.funny_7,
+            R.drawable.funny_8,
+            R.drawable.funny_9,
+            R.drawable.food_1,
+            R.drawable.food_2,
+            R.drawable.food_3,
     };
     public static String[] db_url_fear = {
-            "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC?si=WAHloiatS7-FntlOdrqcqQ",
-            "https://open.spotify.com/playlist/1h90L3LP8kAJ7KGjCV2Xfd?si=NR2A4Mt9QieuNcXHKoybEw"
+            "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC",
+            "https://open.spotify.com/playlist/1h90L3LP8kAJ7KGjCV2Xfd",
+            "https://open.spotify.com/playlist/4FYU1aJih7ykRIUYenRt8w",
+            "https://open.spotify.com/playlist/37i9dQZF1DX1H4LbvY4OJi",
+            "https://open.spotify.com/playlist/37i9dQZF1DWZ72qOlbizxi",
+            "https://open.spotify.com/playlist/4AnAUkQNrLKlJCInZGSXRO",
+            "https://www.amazon.com/Harold-Kumar-Go-White-Castle/dp/B001W880O2/ref=as_li_ss_tl",
+            "https://www.amazon.com/Juno-Ellen-Page/dp/B0014GVCI8/ref=as_li_ss_tl",
+            "https://www.amazon.com/Sideways-Sandra-Oh/dp/B000I9X6NQ/ref=as_li_ss_tl",
+            "https://www.amazon.com/School-Rock-Jack-Black/dp/B0036B7DS2/ref=as_li_ss_tl",
+            "https://www.amazon.com/Lost-Translation-Scarlett-Johansson/dp/B001NLCBJI/ref=as_li_ss_tl",
+            "https://www.amazon.com/Team-America-World-Police-Parker/dp/B00820N2JG/ref=as_li_ss_tl",
+            "https://www.amazon.com/Midnight-Paris-Kathy-Bates/dp/B006O5Y09C/ref=as_li_ss_tl",
+            "https://www.amazon.com/Enough-Said-Julia-Louis-Dreyfus/dp/B00HUNO3JE/ref=as_li_ss_tl",
+            "https://www.amazon.com/Superbad-Jonah-Hill/dp/B00RNV6AP8/ref=as_li_ss_tl",
+            "https://legionathletics.com/healthy-fatty-fish-recipes/",
+            "https://www.allrecipes.com/recipe/236212/homemade-melt-in-your-mouth-dark-chocolate-paleo/",
+            "https://www.thekitchn.com/23-essential-fermented-foods-for-better-gut-health-229599"
     };
 
     // Angry
     public static int[] db_image_angry = {
-            R.drawable.happy_1,
-            R.drawable.happy_2
+            R.drawable.calm_1,
+            R.drawable.calm_2,
+            R.drawable.calm_3,
+            R.drawable.funny_1,
+            R.drawable.funny_2,
+            R.drawable.funny_3,
+            R.drawable.funny_4,
+            R.drawable.funny_5,
+            R.drawable.funny_6,
+            R.drawable.funny_7,
+            R.drawable.funny_8,
+            R.drawable.funny_9,
+            R.drawable.food_1,
+            R.drawable.food_2,
+            R.drawable.food_3,
     };
     public static String[] db_url_angry = {
-            "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC?si=WAHloiatS7-FntlOdrqcqQ",
-            "https://open.spotify.com/playlist/1h90L3LP8kAJ7KGjCV2Xfd?si=NR2A4Mt9QieuNcXHKoybEw"
+            "https://open.spotify.com/playlist/7LI3zw8HLkjKo5YpvA26KG",
+            "https://open.spotify.com/playlist/37i9dQZF1DX1s9knjP51Oa",
+            "https://open.spotify.com/playlist/37i9dQZF1DXaImRpG7HXqp",
+            "https://www.amazon.com/Harold-Kumar-Go-White-Castle/dp/B001W880O2/ref=as_li_ss_tl",
+            "https://www.amazon.com/Juno-Ellen-Page/dp/B0014GVCI8/ref=as_li_ss_tl",
+            "https://www.amazon.com/Sideways-Sandra-Oh/dp/B000I9X6NQ/ref=as_li_ss_tl",
+            "https://www.amazon.com/School-Rock-Jack-Black/dp/B0036B7DS2/ref=as_li_ss_tl",
+            "https://www.amazon.com/Lost-Translation-Scarlett-Johansson/dp/B001NLCBJI/ref=as_li_ss_tl",
+            "https://www.amazon.com/Team-America-World-Police-Parker/dp/B00820N2JG/ref=as_li_ss_tl",
+            "https://www.amazon.com/Midnight-Paris-Kathy-Bates/dp/B006O5Y09C/ref=as_li_ss_tl",
+            "https://www.amazon.com/Enough-Said-Julia-Louis-Dreyfus/dp/B00HUNO3JE/ref=as_li_ss_tl",
+            "https://www.amazon.com/Superbad-Jonah-Hill/dp/B00RNV6AP8/ref=as_li_ss_tl",
+            "https://legionathletics.com/healthy-fatty-fish-recipes/",
+            "https://www.allrecipes.com/recipe/236212/homemade-melt-in-your-mouth-dark-chocolate-paleo/",
+            "https://www.thekitchn.com/23-essential-fermented-foods-for-better-gut-health-229599"
     };
 
     // Sad
     public static int[] db_image_sad = {
             R.drawable.happy_1,
-            R.drawable.happy_2
+            R.drawable.happy_2,
+            R.drawable.happy_3,
+            R.drawable.happy_4,
+            R.drawable.happy_5,
+            R.drawable.happy_6,
+            R.drawable.funny_1,
+            R.drawable.funny_2,
+            R.drawable.funny_3,
+            R.drawable.funny_4,
+            R.drawable.funny_5,
+            R.drawable.funny_6,
+            R.drawable.funny_7,
+            R.drawable.funny_8,
+            R.drawable.funny_9,
+            R.drawable.food_1,
+            R.drawable.food_2,
+            R.drawable.food_3,
     };
     public static String[] db_url_sad = {
-            "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC?si=WAHloiatS7-FntlOdrqcqQ",
-            "https://open.spotify.com/playlist/1h90L3LP8kAJ7KGjCV2Xfd?si=NR2A4Mt9QieuNcXHKoybEw"
+            "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC",
+            "https://open.spotify.com/playlist/1h90L3LP8kAJ7KGjCV2Xfd",
+            "https://open.spotify.com/playlist/4FYU1aJih7ykRIUYenRt8w",
+            "https://open.spotify.com/playlist/37i9dQZF1DX1H4LbvY4OJi",
+            "https://open.spotify.com/playlist/37i9dQZF1DWZ72qOlbizxi",
+            "https://open.spotify.com/playlist/4AnAUkQNrLKlJCInZGSXRO",
+            "https://www.amazon.com/Harold-Kumar-Go-White-Castle/dp/B001W880O2/ref=as_li_ss_tl",
+            "https://www.amazon.com/Juno-Ellen-Page/dp/B0014GVCI8/ref=as_li_ss_tl",
+            "https://www.amazon.com/Sideways-Sandra-Oh/dp/B000I9X6NQ/ref=as_li_ss_tl",
+            "https://www.amazon.com/School-Rock-Jack-Black/dp/B0036B7DS2/ref=as_li_ss_tl",
+            "https://www.amazon.com/Lost-Translation-Scarlett-Johansson/dp/B001NLCBJI/ref=as_li_ss_tl",
+            "https://www.amazon.com/Team-America-World-Police-Parker/dp/B00820N2JG/ref=as_li_ss_tl",
+            "https://www.amazon.com/Midnight-Paris-Kathy-Bates/dp/B006O5Y09C/ref=as_li_ss_tl",
+            "https://www.amazon.com/Enough-Said-Julia-Louis-Dreyfus/dp/B00HUNO3JE/ref=as_li_ss_tl",
+            "https://www.amazon.com/Superbad-Jonah-Hill/dp/B00RNV6AP8/ref=as_li_ss_tl",
+            "https://legionathletics.com/healthy-fatty-fish-recipes/",
+            "https://www.allrecipes.com/recipe/236212/homemade-melt-in-your-mouth-dark-chocolate-paleo/",
+            "https://www.thekitchn.com/23-essential-fermented-foods-for-better-gut-health-229599"
     };
 }
