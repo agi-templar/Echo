@@ -205,6 +205,12 @@ public class CreateNoteFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 String text = mNote.getNoteText();
+
+                if(text == null){
+                    text += "";
+                }
+
+                System.out.println(text);
                 final UpdateTask task = new UpdateTask();
                 task.execute(text);
             }
