@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -81,6 +82,7 @@ public class CreateNoteFragment extends Fragment {
 
     private static final String ARG_NOTE_ID = "note_id";
     private static final String DIALOG_DATE = "DialogDate";
+    private static final String PROFILE_IMAGE_URI_KEY = "profile_image_uri_key";
 
     private static final int REQUEST_DATE = 0;
     private static final int REQUEST_USE_CAMERA_AND_EXTERNAL_STORAGE = 4;
@@ -128,11 +130,13 @@ public class CreateNoteFragment extends Fragment {
         // extract the corresponding note
         UUID noteID = (UUID) getArguments().getSerializable(ARG_NOTE_ID);
         mNote = NoteFactory.get(getActivity()).getNote(noteID);
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_note, container, false);
+
 
         mTitleField = view.findViewById(R.id.note_title);
         mTitleField.setText(mNote.getTitle()); // set text when given the note
@@ -187,6 +191,13 @@ public class CreateNoteFragment extends Fragment {
         });
 
         mProfileImageView = view.findViewById(R.id.image);
+        mProfileImageView.setImageURI(mNote.getImageUri());
+
+//        if (savedInstanceState != null) {
+//            mProfileImageUri = savedInstanceState.getParcelable(PROFILE_IMAGE_URI_KEY);
+//        }
+//        loadProfileImage();
+
         mImageUpload = view.findViewById(R.id.img_button);
         mImageUpload.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -236,9 +247,11 @@ public class CreateNoteFragment extends Fragment {
         }
         if(requestCode ==  REQUEST_CODE_CAMERA_CAPTURE){
             mProfileImageView.setImageURI(mProfileImageUri);
+            mNote.setImageUri(mProfileImageUri);
             saveProfileImage();
         }
     }
+
 
     private void updateDate() {
         mDateButton.setText(mNote.getDate().toString());
@@ -390,6 +403,7 @@ public class CreateNoteFragment extends Fragment {
             e.printStackTrace();
         }
     }
+
 
     private void startCameraActivity() {
         mStartCameraActivityWaiting = false;

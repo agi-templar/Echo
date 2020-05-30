@@ -16,6 +16,8 @@ package com.example.echo;
  * limitations under the License.
  */
 
+import android.net.Uri;
+
 import java.util.Date;
 import java.util.UUID;
 
@@ -29,6 +31,7 @@ public class Note {
     private String mTitle;
     private Date mDate;
     private String mNoteText;
+    private Uri mImage;
 
     public Note() {
         mId = UUID.randomUUID();
@@ -61,6 +64,14 @@ public class Note {
 
     public void setNoteText(String text) {
         mNoteText = text;
+    }
+
+    public Uri getImageUri() {
+        return mImage;
+    }
+
+    public void setImageUri(Uri uri) {
+        mImage = uri;
     }
 }
 
